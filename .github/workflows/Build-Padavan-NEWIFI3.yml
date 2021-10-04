@@ -43,10 +43,11 @@ jobs:
         sudo chmod 777 ./go.sh
         bash ./go.sh
         
-    - name: Apply specialized logo
+    - name: Apply logo banner
       run: |
         cp -f logo/asus_logo.png /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed/bootstrap/img/asus_logo.png
         cp -f logo/main.css /opt/rt-n56u/trunk/user/www/n56u_ribbon_fixed/bootstrap/css/main.css
+        cp -f logo/banner /opt/rt-n56u/trunk/user/scripts/banner
 
     - name: Build Firmware
       env:
