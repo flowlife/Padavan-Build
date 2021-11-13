@@ -1,2 +1,2 @@
 # Padavan-build说明
-更新xray为1.4.5
+CB更新xray为1.5.0
