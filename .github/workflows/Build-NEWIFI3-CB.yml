@@ -108,7 +108,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_MICROSOCKS=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config #可以不集成
         echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config #TUNSAFE
-        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config #DNSFORWARDER
+        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=y" >> .config #DNSFORWARDER
         #
         echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #内网穿透FRPC
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #内网穿透FRPS
