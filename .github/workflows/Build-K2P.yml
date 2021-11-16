@@ -1,5 +1,5 @@
 #修改TNAME: NEWIFI3 中的NEWIFI3为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build Padavan NEWIFI3
+name: Build Padavan K2P
 
 on:
   workflow_dispatch:
