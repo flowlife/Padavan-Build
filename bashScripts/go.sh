@@ -10,11 +10,8 @@ echo $i
 echo $i >> $goVersions
 done
 new_ver=`sed -n '1p' $goVersions`
-#old_ver=`sed -n '2p' $goVersions`
-old_ver=`sed -n '3p' $goVersions` #websocket
-echo "rm -rf $goCacheRootDir/$old_ver"
-rm -rf $goCacheRootDir/$old_ver
-#echo "mv $goCacheRootDir/$new_ver $goCacheRootDir/$old_ver"
-#mv $goCacheRootDir/$new_ver $goCacheRootDir/$old_ver
-echo "cp -rf $goCacheRootDir/$new_ver $goCacheRootDir/$old_ver"
-cp -rf $goCacheRootDir/$new_ver $goCacheRootDir/$old_ver
+old_ver=`sed -n '2p' $goVersions`
+echo "rm -rf $goCacheRootDir/go/1.15.15"
+rm -rf $goCacheRootDir/go/1.15.15
+echo "cp -rf $goCacheRootDir/$new_ver $goCacheRootDir/go/1.15.15"
+cp -rf $goCacheRootDir/$new_ver $goCacheRootDir/go/1.15.15
